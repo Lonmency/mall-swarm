@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 全局异常处理
+ * controller层的业务方法的异常都被封装成了ApiExcepiton
  * Created by macro on 2020/2/27.
  */
 @ControllerAdvice
@@ -25,6 +26,7 @@ public class GlobalExceptionHandler {
         return CommonResult.failed(e.getMessage());
     }
 
+    //传入参数验证失败
     @ResponseBody
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public CommonResult handleValidException(MethodArgumentNotValidException e) {

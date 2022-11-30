@@ -51,6 +51,7 @@ public class WebLogAspect {
     public void doAfterReturning(Object ret) throws Throwable {
     }
 
+    //获取controller方法的日志信息，封装到一个WebLog对象
     @Around("webLog()")
     public Object doAround(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
@@ -85,6 +86,7 @@ public class WebLogAspect {
         logMap.put("spendTime",webLog.getSpendTime());
         logMap.put("description",webLog.getDescription());
 //        LOGGER.info("{}", JSONUtil.parse(webLog));
+        //通过LogStash发送到Elasticsearch中
         LOGGER.info(Markers.appendEntries(logMap), JSONUtil.parse(webLog).toString());
         return result;
     }

@@ -134,11 +134,11 @@ mall
 
 ## 运行效果展示
 
-- 查看注册中心注册服务信息，访问地址：http://192.168.3.101:8848/nacos/
+- 查看注册中心注册服务信息，访问地址：http://127.0.0.1:8848/nacos/
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_new_01.png)
 
-- 监控中心应用信息，访问地址：http://192.168.3.101:8101
+- 监控中心应用信息，访问地址：http://127.0.0.1:8101
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_new_02.png)
 
@@ -146,15 +146,15 @@ mall
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_new_04.png)
 
-- API文档信息，访问地址：http://192.168.3.101:8201
+- API文档信息，访问地址：http://127.0.0.1:8201
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_05.png)
 
-- 日志收集系统信息，访问地址：http://192.168.3.101:5601
+- 日志收集系统信息，访问地址：http://127.0.0.1:5601
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_new_06.png)
 
-- 可视化容器管理，访问地址：http://192.168.3.101:9000
+- 可视化容器管理，访问地址：http://127.0.0.1:9000
 
 ![](http://img.macrozheng.com/mall/project/mall_swarm_run_new_07.png)
 
